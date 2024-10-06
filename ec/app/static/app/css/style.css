@@ -1,0 +1,27 @@
+
+
+/* Stilurile CSS introduse aici */
+#search-results {
+    position: absolute;
+    top: 100%; /* Poziționare sub bara de căutare */
+    left: 0;
+    z-index: 1000;
+    width: 100%; /* Lățimea egală cu input-ul */
+    background-color: #fff; /* Culoarea de fundal */
+    border: 1px solid #ced4da; /* Border subtil */
+    max-height: 200px; /* Înălțimea maximă a rezultatelor pentru a evita suprasolicitarea */
+    overflow-y: auto; /* Scrool daca este necesar */
+    display: none; /* Ascunde inițial rezultatele */
+}
+
+#search-results .dropdown-item {
+    display: block;
+    padding: 0.5rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
